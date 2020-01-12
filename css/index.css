@@ -27,12 +27,14 @@ section {
 article {
   background-color: #EAEAEA;
   border: none;
+  width: 80%;
 }
 
 aside {
     display: flexbox;
     background-color: #EAEAEA;
     border: none;
+    width: 20%;
  }
 
 #picture {
