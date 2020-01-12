@@ -4,21 +4,29 @@ header {
     padding: 20px;
     background-color: dodgerblue;
   }
-
-aside {
-    display: flexbox;
- }
-
- body {
-  color: blue;
-}
-
 h1 {
   color: white;
 }
 
 h2 {
   color: dodgerblue;
+}
+ 
+section {
+  background-color: #EAEAEA;
+}
+
+article {
+  background-color: #EAEAEA;
+}
+
+aside {
+    display: flexbox;
+    background-color: #EAEAEA;
+ }
+
+ body {
+  color: blue;
 }
 
 footer {
