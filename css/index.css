@@ -7,8 +7,8 @@ header {
   }
 
 body {
-    margin: 0;
-    color: blue;
+  border: none;
+  color: blue;
 }
     
 h1 {
@@ -21,21 +21,28 @@ h2 {
  
 section {
   background-color: #EAEAEA;
+  border: none;
 }
 
 article {
   background-color: #EAEAEA;
+  border: none;
 }
 
 aside {
     display: flexbox;
     background-color: #EAEAEA;
+    border: none;
  }
 
+.picture {
+  width: 100px;
+}
 
 footer {
   color: white;
   background-color: dodgerblue;
   text-align: center;
   padding: 10px;
+  border: none;
 }
