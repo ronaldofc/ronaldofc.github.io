@@ -1,7 +1,7 @@
 
 header {
     font-family: 'Fugaz One', Arial, sans-serif; 
-    padding: 30px;
+    padding: 20px;
     background-color: dodgerblue;
   }
 
@@ -9,3 +9,14 @@ aside {
     display: flexbox;
  }
 
+ body {
+  color: blue;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: dodgerblue;
+}
