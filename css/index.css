@@ -20,3 +20,9 @@ h1 {
 h2 {
   color: dodgerblue;
 }
+
+footer {
+  color: white;
+  background-color: dodgerblue;
+  text-align: center;
+}
