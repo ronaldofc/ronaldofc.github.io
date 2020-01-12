@@ -34,11 +34,12 @@ aside {
     display: flexbox;
     background-color: #EAEAEA;
     border: none;
-    width: 20%;
+    /*width: 20%;*/
  }
 
 #picture {
-  width: 50px;
+  border: none;
+  /*width: 50px; */
 }
 
 #container {
