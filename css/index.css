@@ -39,7 +39,7 @@ header {
 section {
   background-color: #EAEAEA;
   border: none;
-  color: darkblue;
+  color: orangered;
   font-family: Arial;
   border: none;
   margin: 0;
@@ -69,12 +69,12 @@ h1 {
 }
 
 h2 {
-  color: darkblue;
+  color: orangered;
   padding-left: 50px;
 }
 
 a {
-  color: darkblue;
+  color: orangered;
 }
 #picture {
   border: none;
