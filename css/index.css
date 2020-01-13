@@ -39,6 +39,7 @@ header {
 section {
   background-color: #EAEAEA;
   border: none;
+  color: darkblue;
   font-family: Arial;
   border: none;
   margin: 0;
@@ -46,6 +47,7 @@ section {
   border-bottom-width: 02px;
   border-bottom-style: solid;
   border-bottom-color: darkblue;
+
 }
 
 article {
