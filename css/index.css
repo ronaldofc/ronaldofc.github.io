@@ -69,14 +69,18 @@ h1 {
 }
 
 h2 {
-  color: orangered;
+  color: darkblue;
+  font-size: 1em;
   padding-left: 50px;
 }
 
 a {
-  color: orangered;
+  color: darkblue;
 }
 
+#aFooter {
+  color: white;
+}
 p {
   color: white;
 }
