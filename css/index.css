@@ -73,6 +73,9 @@ h2 {
   padding-left: 50px;
 }
 
+a {
+  color: darkblue;
+}
 #picture {
   border: none;
   width: 150px;
