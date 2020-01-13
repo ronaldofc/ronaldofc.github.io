@@ -31,7 +31,7 @@ footer {
 header {
   font-family: Arial;
   border: none;
-  margin: none;
+  margin: 0;
   background-color: dodgerblue;
   width: 100%;
 }
@@ -41,7 +41,7 @@ section {
   border: none;
   font-family: Arial;
   border: none;
-  margin: none;
+  margin: 0;
   width: 100%;
   border-bottom-width: 02px;
   border-bottom-style: solid;
@@ -50,7 +50,7 @@ section {
 
 article {
   background-color: #EAEAEA;
-  margin: none;
+  margin: 0;
   border: none;
   width: 85%;
 }
@@ -58,7 +58,6 @@ article {
 aside {
   background-color: #EAEAEA;
   border: none;
-  align-content: right;
   width: 15%;
 }
 
