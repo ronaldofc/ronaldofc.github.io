@@ -1,57 +1,84 @@
-
-header {
-    font-family: 'Fugaz One', Arial, sans-serif; 
-    padding: 20px;
-    border: none;
-    background-color: dodgerblue;
-  }
+html {
+  height: 100%;
+}
 
 body {
-  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
   color: blue;
-}
-    
-h1 {
-  color: white;
-}
-
-h2 {
-  color: dodgerblue;
-}
- 
-section {
-  background-color: #EAEAEA;
-  border: none;
-}
-
-article {
-  background-color: #EAEAEA;
-  border: none;
-  width: 80%;
-}
-
-aside {
-    display: flexbox;
-    background-color: #EAEAEA;
-    border: none;
-    /*width: 20%;*/
- }
-
-#picture {
-  border: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 #container {
+  flex: 1 0 auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
 }
 
 footer {
   color: white;
   background-color: dodgerblue;
   text-align: center;
-  padding: 10px;
-  border: none;
+  padding-top: 20px;
+  flex-shrink: 0;
 }
 
+header {
+  font-family: Arial;
+  border: none;
+  margin: none;
+  background-color: dodgerblue;
+  width: 100%;
+}
+
+section {
+  background-color: #EAEAEA;
+  border: none;
+  font-family: Arial;
+  border: none;
+  margin: none;
+  width: 100%;
+  border-bottom-width: 02px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+}
+
+article {
+  background-color: #EAEAEA;
+  margin: none;
+  border: none;
+  width: 85%;
+}
+
+aside {
+  background-color: #EAEAEA;
+  border: none;
+  align-content: right;
+  width: 15%;
+}
+
+h1 {
+  color: white;
+  padding-left: 50px;
+}
+
+h2 {
+  color: dodgerblue;
+  padding-left: 50px;
+}
+
+#picture {
+  border: none;
+  width: 150px;
+  margin-top: -50px;
+  margin-left: -10px;
+}
+
+ins {
+  text-decoration: none;
+}
