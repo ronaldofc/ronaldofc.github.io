@@ -22,7 +22,7 @@ body {
 
 footer {
   color: white;
-  background-color: dodgerblue;
+  background-color: #2F356A;
   text-align: center;
   padding-top: 20px;
   flex-shrink: 0;
@@ -32,7 +32,7 @@ header {
   font-family: Arial;
   border: none;
   margin: 0;
-  background-color: dodgerblue;
+  background-color: #2F356A;
   width: 100%;
 }
 
@@ -76,6 +76,11 @@ h2 {
 a {
   color: orangered;
 }
+
+p {
+  color: white;
+}
+
 #picture {
   border: none;
   width: 150px;
@@ -83,6 +88,7 @@ a {
   margin-left: -10px;
   
 }
+
 
 ins {
   text-decoration: none;
