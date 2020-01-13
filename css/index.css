@@ -68,6 +68,10 @@ h1 {
   padding-left: 50px;
 }
 
+section h1 {
+  color: darkblue;
+}
+
 h2 {
   color: darkblue;
   font-size: 1em;
@@ -92,7 +96,6 @@ p {
   margin-left: -10px;
   
 }
-
 
 ins {
   text-decoration: none;
