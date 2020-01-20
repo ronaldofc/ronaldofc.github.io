@@ -1,0 +1,42 @@
+
+/* Import Always are First */
+@import url(/css/normalize.css)
+
+/* General Rules that apply to all devices */
+html *{
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+box-sizing: border-box;
+}
+
+body{
+    font-size: 18px; /* 1e or 1rem */
+}
+
+/* Mobo Rules Next */
+#wrapper{
+    width: 100%;
+    background-color: yellow;
+}
+
+
+/* larger Screen Rules */
+@media screen and (min-width: 680p){
+    #wrapper{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: wheat;
+        font-size: 4vw;
+    }
+}
+
+navList{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
