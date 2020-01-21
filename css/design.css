@@ -46,11 +46,24 @@ section {
   padding: 10px;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2F356A;
+  color: white;
+  text-align: center;
+}
+
 h1 {
   font-size: 1em;
   margin: 5px;
 }
 
+#aFooter {
+  color: white;
+}
 img {
   display: block;
   height: 300px;
