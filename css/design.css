@@ -1,114 +1,84 @@
 
 /* Import Always are First */
-/***************************/
 @import url(/css/normalize.css)
 
 
 /* General Rules that apply to all devices */
-
-html *{
-    box-sizing: border-box;
-    height: 100%;
+* {
+  box-sizing: border-box;
 }
 
 *::before, *::after{
 box-sizing: border-box;
 }
 
-body, nav{
-  font-family: 'Ubuntu', sans-serif;
-  color: navy;
+body {
+  font-size: 20px;
   padding: 0px;
   margin: 0px;
+  background:white;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  color: white;
+  background-color: #2F356A;
+  width: 100%;
+  padding: 20px 0px 30px 0px;
+  text-align: center;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
-  font-size: 0.8rem;
+  grid-template-columns: auto;
+  place-items: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #2F356A;
-  color: white;
+section {
+  display: block;
+  background-color: white;
+  border: 3px solid navy;
+  width: 90%;
+  height: 90%;
   text-align: center;
+  margin-top: 30px;
+  padding: 10px;
 }
-  
-header {
-  Position: fixed;
-  font-family: 'Roboto Condensed', sans-serif;
-  border: none;
-  background-color: #2F356A;
-  width: 100%;
-  text-align: center;
-}
-  
+
 h1 {
-  color: white;
-  padding-left: 50px;
-}
-  
-section h1 {
-  color: darkblue;
-}
-  
-h2 {
-  color: darkblue;
   font-size: 1em;
-  padding-left: 50px;
-}
-  
-a {
-  color: darkblue;
-}
-  
-#aFooter {
-  color: white;
+  margin: 5px;
 }
 
-p {
-  color: white;
-}
-  
 img {
-  position: absolute;
-  top: 35px;
-  right: 100px;
-  width: 20%;
+  display: block;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
   border: 3px solid navy;
 }
-  
-ins {
-  text-decoration: none;
-}
-  
 
-/* Tablet View Rules */
+/* Tablet Screen Rules */
 @media screen and (min-width: 37.5em){
-
-main {
+  main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 0.8rem;
+    grid-template-columns: auto auto;
   }
 
-  
+  h1 {
+    font-size: 1em;
+  }
 }
 
-
-/* Desktop View Rules */
+/* Desktop Screen Rules */
 @media screen and (min-width: 60em){
-
-  main {
+  main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 0.8rem;
+    grid-template-columns: auto auto auto;
   }
-
-  
+  h1 {
+    font-size: 2em;
+  }
 }
-

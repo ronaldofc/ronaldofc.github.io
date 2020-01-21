@@ -13,6 +13,7 @@ box-sizing: border-box;
 
 body{
     font-size: 18px; /* 1e or 1rem */
+    margin: 0;
 }
 
 /* Mobo Rules Next */
