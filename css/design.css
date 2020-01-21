@@ -1,11 +1,13 @@
 
-/* Import Always are First */
-@import url(/css/normalize.css)
+
+/* Imports */
+/* 1.1 Normalize Import */  
+@import url('//css/normalize.css');
 
 
-/* General Rules that apply to all devices */
-html *{
-  box-sizing: border-box;
+/*General Rules that apply to all devices*/
+* {
+    box-sizing: border-box;
 }
 
 *::before, *::after{
