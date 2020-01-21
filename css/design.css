@@ -1,9 +1,6 @@
-
-
 /* Imports */
 /* 1.1 Normalize Import */  
-@import url('//css/normalize.css');
-
+@import url('normalize.css');
 
 /*General Rules that apply to all devices*/
 * {
