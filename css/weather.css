@@ -1,24 +1,67 @@
 html {
     height: 100%;
-  }
+}
   
-  body, nav {
+body, nav {
     font-family: sans-serif;
     font-weight: 400;
     color: navy;
     line-height: 26px;
     padding: 0px;
     margin: 0px;
-  }
+}
 
-  main {
+main {
       position: flex;
       flex-direction: column;
       width: 300px;
       height: 300px;
+}
+  
+.colors-container {
+    display: flex;
+    background-color: white;
   }
   
-  footer {
+.color1 {
+    background-color: #4E6CB6;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.color2 {
+    background-color: #8F54A3;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.color3 {
+    background-color: #FFA32D;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.color4 {
+    background-color: #F9E444 ;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.color5 {
+    background-color: black ;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.color6 {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+footer {
       position: fixed;
       left: 0;
       bottom: 0;
@@ -26,16 +69,16 @@ html {
       background-color: #2F356A;
       color: white;
       text-align: center;
-  }
+}
   
-  header {
+header {
     font-family: Arial;
     border: none;
     margin: 0;
     background-color: #2F356A;
     width: 100%;
     padding: 40px 0px 40px 0px;
-  }
+}
   
   h1 {
     color: white;
