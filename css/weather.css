@@ -18,43 +18,46 @@ main {
       height: 300px;
 }
   
-.colors-container {
+#colors-container {
     display: flex;
     background-color: white;
   }
   
-.color1 {
+  #colors-container color1 {
     background-color: #4E6CB6;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
 }
 
-.color2 {
+#colors-container color2 {
     background-color: #8F54A3;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
 }
-.color3 {
+
+#colors-container color3 {
     background-color: #FFA32D;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
 }
-.color4 {
+
+#colors-container color4 {
     background-color: #F9E444 ;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
 }
-.color5 {
+
+#colors-container color5 {
     background-color: black ;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
 }
-.color6 {
+#colors-container color6 {
     background-color: white;
     margin: 10px;
     padding: 20px;
