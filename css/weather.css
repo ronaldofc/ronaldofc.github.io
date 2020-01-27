@@ -1,3 +1,17 @@
+/* Imports */
+/* 1.1 Normalize Import */  
+@import url('//css/normalize.css');
+
+
+/*General Rules*/
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -132,3 +146,32 @@ header {
     text-decoration: none;
   }
   
+
+  /* Tablet Screen Rules */
+@media screen and (min-width: 37.5em){
+    body{
+      font-size: 18px;
+    }
+    main{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  /* Desktop Screen Rules */
+  @media screen and (min-width: 60em){
+    body{
+      font-size: 20px;
+    }
+    main{
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    h1 {
+      font-size: 2em;
+    }
+  }
