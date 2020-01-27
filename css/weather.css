@@ -12,8 +12,6 @@ body, nav {
 }
 
 main {
-      position: flex;
-      flex-direction: column;
       width: 300px;
       height: 300px;
 }
