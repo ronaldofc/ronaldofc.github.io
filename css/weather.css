@@ -10,6 +10,11 @@ html {
     padding: 0px;
     margin: 0px;
   }
+
+  main {
+      position: flex;
+      flex-direction: column;
+  }
   
   footer {
       position: fixed;
@@ -56,7 +61,7 @@ html {
   section p {
       color: black;
   }
-  
+
   p {
     color: white;
   }
