@@ -83,19 +83,27 @@ header {
   
   h1 {
     color: white;
-    padding-left: 50px;
+    padding-left: 30px;
   }
   
   section h1 {
     color: darkblue;
+    font-size: 35px;
   }
   
   h2 {
     color: darkblue;
-    font-size: 1em;
-    padding-left: 50px;
+    padding-left: 30px;
+    font-size:  25px;
+  }
+   
+  h3 {
+    color: black;
+    padding-left: 30px;
+    font-size: 15px;
   }
   
+
   a {
     color: darkblue;
   }
