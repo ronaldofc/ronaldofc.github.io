@@ -17,7 +17,6 @@ function toggleMenu() {
 
 
 
-
 //JS Last file modifier
 document.getElementById("lastModif").innerHTML = document.lastModified;
 
