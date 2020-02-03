@@ -1,3 +1,17 @@
+/* Imports */
+/* 1.1 Normalize Import */  
+@import url('//css/normalize.css');
+
+
+/*General Rules*/
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
