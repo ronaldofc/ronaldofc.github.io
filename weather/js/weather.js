@@ -1,3 +1,10 @@
+//Hamburguer Menu
+const hambutton = document.querySelector(".ham");
+hambutton.addEventListener("click", toggleMenu, false);
+function toggleMenu() {
+  document.querySelector(".navigation").classList.toggle("responsive");
+}
+
 
 //JS to get the actual date
 var now = new Date();
@@ -5,16 +12,6 @@ dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 monName = ["january", "Febuary", "March", "April", "Maio", "June", "July", "August", "September", "November","December"];
 dateTest = dayName[now.getDay() ] + ", " + now.getDate() + " " + monName [now.getMonth() ] + " " + now.getFullYear ();
 document.getElementById("test").innerHTML = dateTest;
-
-
-//Hamburguer Menu
-const hambutton = document.querySelector(".ham");
-hambutton.addEventListener("click", toggleMenu, false);
-
-function toggleMenu() {
-  document.querySelector(".navigation").classList.toggle("responsive");
-}
-
 
 
 //JS Last file modifier

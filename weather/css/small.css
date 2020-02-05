@@ -16,11 +16,10 @@ html {
     width: 100%;
     height: 100%;
 }
-  
+
 body {
   display: block;
   width: 100%;
-  height: 76%;
   font-family: Arial;
 }
 
@@ -33,9 +32,23 @@ header {
   background-color: #2F356A;
 }
 
+h1 {
+  color: white;
+  padding-left: 80px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+header p {
+  color: white;
+  padding-left: 80px;
+  margin: 0 0 0 0;
+}
+
 img {
   float: left;
-  width: 100px;
+  width: 80px;
   margin-left: 5px;
   margin-top: 5px;
   margin-right: 20px;
@@ -45,52 +58,59 @@ img {
 
 /*Navigation menu */
 nav {
-   width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+  background-color: rgb(74, 21, 92);
 }
-
-nav ul{
-  text-align: center;
-  list-style-type: none;
-  background-color: blueviolet;
-  padding: 0px;
+.navigation {
+  list-style: none;
+  padding: 0;
 }
-
-nav ul li {
-  float: left;
-  width: 25%;
-}
-
-.links-list a {
+.navigation li:first-child {
   display: block;
-  background-color: rgb(179,57,81);
-  color: #fff;
+}
+.navigation li {
+  align-content: center;
+  display: none;
+}
+.navigation a {
+  display: block;
+  color:  white;
+  padding: 0.75rem;
+  text-align: left;
   text-decoration: none;
-  line-height: 40px;
+}
+.navigation a:hover {
+  color: #000;
+  background-color: gray;
+  font-weight: 700;
+}
+.responsive li {    /* the onclick JS toggles the */
+  display: block;
 }
 
-.links-list a:hover {
-  background-color: rgb(66, 28, 40);
-  color: #fff;
+
+/* Location */
+
+section {
+  margin: 0;
+  padding: 0;
+}
+.location h2 {
+    color: darkblue;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size:  25px;
+}
+.location p {
+  margin: 0;
+    padding-left: 30px;
+    color: black;
 }
 
-
-/* Media Query for medium + screens */
-
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* needed because of state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation li a {
-		color: yellow;
-		text-align: center;
-	}
-	
-	.navigation li:first-child {
-		display: none;
-	}
 
 
 /*Information Session */
@@ -111,10 +131,10 @@ nav ul li {
     border: 1px solid navy;
 } 
 
-
 /*   Footer   */
 footer {
-    font-size: 12px;
+  margin-bottom: 65px;
+    font-size: 13px;
   padding: 03px;
     width: 100%;
     height: 12%;
@@ -123,22 +143,11 @@ footer {
     background-color: #2F356A;
 }
 
-  h1 {
-    color: white;
-    padding-left: 30px;
-  }
-  
   section h1 {
     color: darkblue;
     font-size: 35px;
   }
   
-  h2 {
-    color: darkblue;
-    padding-left: 30px;
-    font-size:  25px;
-  }
-   
   h3 {
     color: black;
     padding-left: 30px;
@@ -152,12 +161,8 @@ footer {
   #aFooter {
     color: white;
   }
-
-  section p {
-      color: black;
-  }
-
-  p {
+ 
+  footer p {
     color: white;
   }
   

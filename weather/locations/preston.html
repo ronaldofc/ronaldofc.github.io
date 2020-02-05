@@ -11,14 +11,8 @@
     <title>kidsweather.com</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/weather/css/normalize.css">
-
-    <link rel="stylesheet" type="text/css" href="/weather/css/large.css" media="screen">
-<!--
-    <link rel="stylesheet" type="text/css" href="/weather/css/small.css" media="(max-width: 767px)">
-    <link rel="stylesheet" type="text/css" href="/weather/css/medium.css" media="(min-width: 768px) and (max-width: 1280px)">
-    <link rel="stylesheet" type="text/css" href="/weather/css/large.css" media="(min-width: 1281px)">
--->
-
+    <link rel="stylesheet" type="text/css" href="/weather/css/small.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" type="text/css" href="/weather/css/large.css" media="(min-width: 768px)">
 </head>
 
 <body>
@@ -29,9 +23,7 @@
         <p>Weather for fun !</p>
     </header>
 
-
-<!--
-    <nav class="links-list">
+    <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
@@ -39,50 +31,38 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Favorites</a></li>
         </ul>
-    </nav> 
--->
-
-    <nav>
-        <ul class="navigation">
-            <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
     </nav>
 
 
-    <section class="location">
-        <h2>Preston</h2>
-        <p>Gps: 42.543, 111.5231</p>
-    </section> 
+    <main>
 
-    <div id="information">
+        <section class="location">
+            <h2>Preston</h2>
+            <p>Gps: 42.543, 111.5231</p>
+        </section> 
+    
+        <div id="information">
   
-        <div id="info-main">
-            info-main
-        </div>    
+            <div id="info-main">
+                info-main
+            </div>    
+    
+            <div id="info-temperature">
+                info-temperature
+            </div>
+    
+            <div id="info-precipitation">
+                info-precipitation
+            </div>
+    
+            <div id="info-conditions">
+                info-condition
+            </div>
+        </div> 
 
-        <div id="info-temperature">
-            info-temperature
-        </div>
+    </main>
 
-        <div id="info-precipitation">
-            info-precipitation
-        </div>
-
-        <div id="info-conditions">
-            info-condition
-        </div>
-
-
-    </div>  
-
-
+    
     <footer>
         <!-- TODO: check the footerYear -->
         <p>&copy; <ins id="footerYear"></ins> 2020 | Ronaldo Correa | <a id="aFooter"
