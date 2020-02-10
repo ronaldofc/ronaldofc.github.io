@@ -193,7 +193,7 @@ nav {
 
 .center-symbol {
   position: absolute;
-  margin: center;
+  margin: auto;
   z-index: 2;
   Font-size: 70px;
 }
