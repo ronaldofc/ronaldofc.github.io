@@ -211,7 +211,7 @@ nav {
 .number-03{ margin-top:     0; margin-left:   88px; }
 .number-04{ margin-top:  43px; margin-left:   78px; }
 .number-05{ margin-top:  75px; margin-left:   50px; }
-.number-06{ margin-top:  85px; margin-left: center; }
+.number-06{ margin-top:  85px; margin-left:   auto; }
 .number-07{ margin-top:  75px; margin-left:  -44px; }
 .number-08{ margin-top:  45px; margin-left:  -80px; }
 .number-09{ margin-top:     0; margin-left:  -88px; }
@@ -232,7 +232,7 @@ nav {
 .m-03 { margin-top:      0; margin-left:  120px; }
 .m-04 { margin-top:   55px; margin-left:  110px; }
 .m-05 { margin-top:   95px; margin-left:   70px; }
-.m-06 { margin-top:  115px; margin-left: center; }
+.m-06 { margin-top:  115px; margin-left:   auto; }
 .m-07 { margin-top:  100px; margin-left:  -75px; }
 .m-08 { margin-top:   60px; margin-left: -105px; }
 .m-09 { margin-top:      0; margin-left: -120px; }
