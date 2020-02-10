@@ -161,6 +161,94 @@ nav {
 }
 
 
+/* Component */
+
+.component{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 1px solid navy;
+}
+
+.circle-main{
+  width: 200px;
+  height: 200px;
+  background-color: darkgray;
+  position: relative;
+  border-radius: 90%;
+  display: flex;  
+  justify-content: center;
+}
+  
+.circle-inner{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 90%;
+  align-self: center;
+}
+
+.center-symbol {
+  position: absolute;
+  margin: center;
+  z-index: 2;
+  Font-size: 70px;
+}
+
+
+.hour {
+  position: absolute;
+  z-index: 3;
+  Font-size: 20px;
+  font-weight: bold;
+}
+.number-12{ margin-top: -90px; margin-left:   auto; }
+.number-01{ margin-top: -80px; margin-left:   45px; }
+.number-02{ margin-top: -45px; margin-left:   80px; }
+.number-03{ margin-top:     0; margin-left:   88px; }
+.number-04{ margin-top:  43px; margin-left:   78px; }
+.number-05{ margin-top:  75px; margin-left:   50px; }
+.number-06{ margin-top:  85px; margin-left: center; }
+.number-07{ margin-top:  75px; margin-left:  -44px; }
+.number-08{ margin-top:  45px; margin-left:  -80px; }
+.number-09{ margin-top:     0; margin-left:  -88px; }
+.number-10{ margin-top: -45px; margin-left:  -80px; }
+.number-11{ margin-top: -80px; margin-left:  -44px; }
+
+
+.mensure {
+  position: absolute;
+  z-index: 4;
+  Font-size: 25px;
+  font-weight: bold;
+}
+.m-12 { margin-top: -120px; margin-left:   auto; }
+.m-01 { margin-top: -100px; margin-left:   70px; }
+.m-02 { margin-top:  -55px; margin-left:  110px; }
+.m-03 { margin-top:      0; margin-left:  120px; }
+.m-04 { margin-top:   55px; margin-left:  110px; }
+.m-05 { margin-top:   95px; margin-left:   70px; }
+.m-06 { margin-top:  115px; margin-left: center; }
+.m-07 { margin-top:  100px; margin-left:  -75px; }
+.m-08 { margin-top:   60px; margin-left: -105px; }
+.m-09 { margin-top:      0; margin-left: -120px; }
+.m-10 { margin-top:  -55px; margin-left: -110px; }
+.m-11 { margin-top: -100px; margin-left:  -80px; }
+
+
+
+
+
+
+
+
+
+
+
+
 /*   Footer   */
 footer {
   padding: 03px;
