@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Homepage</title>
+    <meta name="author" content="Ronaldo Correa"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Week 6 Weather Images - CIT 230" />
+    <link href="https://fonts.googleapis.com/css?family=Acme%7CNeuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/weather/css/images.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic Lazy-Loading Image Practice</h1>
+    </header>
+
+<main>
+
+    <picture class="photo">
+        <source srcset="/weather/images/snow-small-400x600.jpg" media="(max-width: 799px)">
+        <source srcset="/weather/images/snow-large-800x1200.jpg" media="(min-width: 800px)">
+        <img src="/weather/images/placeholder.png" alt="weather - snow" >
+    </picture>
+
+    <picture class="photo">
+        <source srcset="/weather/images/clouds-small-400x400.jpg" media="(max-width: 799px)">
+        <source srcset="/weather/images/clouds-large=800x800.jpg" media="(min-width: 800px)">            
+        <img src="/weather/images/placeholder.png" alt="weather - clouds">
+    </picture>
+
+    <picture class="photo">
+        <source srcset="/weather/images/fog-small-400x225.jpg" media="(max-width: 799px)">
+        <source srcset="/weather/images/fog-large-800x450.jpg" media="(min-width: 800px)">
+        <img src="/weather/images/placeholder.png" alt="weather - fog" >
+    </picture>
+
+    <picture class="photo">
+        <source srcset="/weather/images/rain-small-400x267.jpg" media="(max-width: 799px)">
+        <source srcset="/weather/images/rain-large-800x533.jpg" media="(min-width: 800px)">
+        <img src="/weather/images/placeholder.png" alt="weather - rain">
+    </picture>
+
+    <picture class="photo">
+        <source srcset="/weather/images/clear-small-400x250.jpg" media="(max-width: 799px)">
+        <source srcset="/weather/images/clear-large-800x600.jpg" media="(min-width: 800px)">
+        <img src="/weather/images/placeholder.png" alt="weather - clear" >
+    </picture>
+
+</main>
+
+
+<script src="/weather/js/lazy-loading-images.js"></script>
+</body>
+
+</html>
