@@ -100,7 +100,6 @@ function timeIndicator(actualHour) {
 };       
 
 
-
 //F008 Set the BackGroundImage
 function backGrdImage(currCond) {
 
