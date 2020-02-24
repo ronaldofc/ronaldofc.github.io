@@ -93,4 +93,20 @@ function buildWC(speed, temp) {
 };
 
 
+//F007 Time indicador 
+function timeIndicator(actualHour) {
+   
+   //TODO - buid the function
+
+};       
+
+
+
+//F008 Set the BackGroundImage
+function backGrdImage(currCond) {
+
+   //TODO - buid the function
+
+
+};
 
