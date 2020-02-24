@@ -286,6 +286,15 @@ footer {
     text-decoration: none;
   }
   
+  #curWeather {
+    background-size: cover;
+   }
+   
+/* Background pictures for summary   */  
+.clear {
+  background-image: url("/weather/images/clear_small.jpg");
+}
+
 
 
 /* @media for large screen */
@@ -401,3 +410,9 @@ nav {
    }
 }
   
+
+/* Background pictures for summary large Screen  */
+.clear {
+    background-image: url("/weather/images/clear_large.jpg");
+}
+
