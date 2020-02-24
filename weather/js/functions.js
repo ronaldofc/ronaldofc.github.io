@@ -11,9 +11,8 @@ console.log('My javascript is being read.');        //Test if this file is runni
 *********************************************************************************/
 var currCond = "RAIN";          // Current condition of the weather
 var actualHour = 6;             // Time Indicator
-var speed = 10;
-var temp = 45;
-
+var temp = 31;
+var speed = 5;
 
 
 /* FUNCTIONS - Index:
