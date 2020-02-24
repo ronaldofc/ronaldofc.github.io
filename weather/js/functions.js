@@ -43,7 +43,7 @@ document.addEventListener("DOMContentloaded", function () {
     timeIndicator(actualHour);       // Call Time Indicator
     backGrdImage(currCond);          // Call Backgound Image
 
-});
+})
 
 
 //F001 Build the modified Data function
