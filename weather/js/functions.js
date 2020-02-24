@@ -31,7 +31,7 @@ F006 - buildWC()                - To Calculate the Feels Like Temperature
 
 
 //F000 - DOMContentLoaded
-document.addEventListener("DOMContentloaded", function () {
+document.addEventListener("DOMContentLoaded", function(){
     
     buildModDate();                  // Call the modified Data 
     hamMenu();                       // Call Hamburguer Menu 
