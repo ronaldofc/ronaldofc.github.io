@@ -36,6 +36,10 @@ document.addEventListener("DOMContentloaded", function () {
     buildModDate();                  // Call the modified Data 
     hamMenu();                       // Call Hamburguer Menu 
     updateFeelsLikeTemp();           // Call Update feels Like Temperature
+    
+    //checkPoint
+    console.log(" CheckPoint - DOMContentLeaded main function() ");
+
     timeIndicator(actualHour);       // Call Time Indicator
     backGrdImage(currCond);          // Call Backgound Image
 
