@@ -121,7 +121,9 @@ nav {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 1100px;
+  height: 1100px; 
+  background-size: cover;
+  /*padding-top: 20px;*/
 }
 
 .info-main{
@@ -294,23 +296,23 @@ footer {
 
 /* background images for behind tiles */
 .rain {
-  background-image: url("../images/rain-small.jpg");
+  background-image: url("/weather/images/rain-small.jpg");
 }
 
 .snow {
-  background-image: url("../images/snow-small.jpg");
+  background-image: url("/weather/images/snow-small.jpg");
 }
 
 .clouds {
-  background-image: url("../images/clouds-small.jpg");
+  background-image: url("/weather/images/clouds-small.jpg");
 }
 
 .clear {
-  background-image: url("../images/clear-small.jpg");
+  background-image: url("/weather/images/clear-small.jpg");
 }
 
 .fog {
-  background-image: url("../images/fog-small.jpg");
+  background-image: url("/weather/images/fog-small.jpg");
 }
 
 
@@ -338,6 +340,7 @@ footer {
       margin: 0;
       padding: 0;
       width: 100%;
+      background-size: cover;
     }
 
     /*Navigation menu */
@@ -430,23 +433,23 @@ footer {
 
     /* background images for behind tiles */
     .rain {
-      background-image: url("../images/rain-large.jpg");
+      background-image: url("/weather/images/rain-large.jpg");
     }
 
     .snow {
-      background-image: url("../images/snow-large.jpg");
+      background-image: url("/weather/images/snow-large.jpg");
     }
 
     .clouds {
-      background-image: url("../images/clouds-large.jpg");
+      background-image: url("/weather/images/clouds-large.jpg");
     }
 
     .clear {
-      background-image: url("../images/clear-large.jpg");
+      background-image: url("/weather/images/clear-large.jpg");
     }
 
     .fog {
-      background-image: url("../images/fog-large.jpg");
+      background-image: url("/weather/images/fog-large.jpg");
     }
 
 }
