@@ -142,10 +142,43 @@ nav {
   text-align: center;
   box-shadow: 5px 5px 5px rgb(144, 130, 130);
   margin: 20px auto;
-
-
-
 }
+
+
+#temp-high{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-size: 2.5rem;
+  color: red;
+}
+
+
+#temp-actual{
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  font-size: 5rem;
+  color: green;
+}
+
+#temp-low{
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  font-size: 2.5rem;
+  color: blue;
+}
+
+#feels-like{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-size: 2.5rem;
+  color: red;
+}
+
+
 
 .info-temperature{
   display: block;
