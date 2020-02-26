@@ -150,6 +150,7 @@ nav {
 
 #temp-high{
   width: 33%;
+  height: 25px;
   text-align: center;
   font-size: 25px;
   color: red;
@@ -158,6 +159,7 @@ nav {
 
 #temp-actual{
   width: 33%;
+  height: 25px;
   text-align: center;
   font-size: 55px;
   color: green;
@@ -166,12 +168,14 @@ nav {
 #temp-low{
   text-align: center;
   width: 33%;
+  height: 25px;
   font-size: 25px;
   color: blue;
 }
 
 #feels-like{
   width: 100%;
+  height: 25px;
   padding: 0;
   border: 0;
   text-align: center;
