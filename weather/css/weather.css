@@ -186,13 +186,13 @@ nav {
 
 #wind-std {
 width: 33%;
-align-self: left;
+color: black;
 }
 
-
 #wind-gusts{
+
 width: 33%;
-align-self: right;
+color: black;
 }
 
 #windicon{
