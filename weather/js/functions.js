@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(){
     timeIndicator(actualHour);       // Call Time Indicator
     changeSummaryImage(currCond);    // Call Backgound Image
 
-    //checkPoint
+    //checkPoint console
     console.log(" CheckPoint - DOMContentLeaded ... is running ok ");
 })
 /*****************************************************************************/
@@ -118,4 +118,7 @@ function changeSummaryImage(currCond)
     //send info to console
     console.log("condition = " + currCond);
     console.groupEnd();
+
+    //checkPoint
+    console.log(" CheckPoint - changeSummaryImage ... is running ok ");
 }
