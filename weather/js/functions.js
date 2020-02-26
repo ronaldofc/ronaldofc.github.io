@@ -60,7 +60,7 @@ function actualDate(){
     let now = new Date();
     let dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let monName = ["january", "Febuary", "March", "April", "Maio", "June", "July", "August", "September", "November","December"];
-    dateCustomized = dayName[now.getDay() ] + ", " + now.getDate() + " " + monName [now.getMonth() ] + " " + now.getFullYear ();
+    let dateCustomized = dayName[now.getDay() ] + ", " + now.getDate() + " " + monName [now.getMonth() ] + " " + now.getFullYear ();
     document.getElementById("lastModif").innerHTML = dateCustomized;
 };
 
