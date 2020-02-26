@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Climate Check</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Brandon Layton">
+    <meta name="description" content="Design principles document">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">      
+    <!-- css sheets -->
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+    <link rel="stylesheet" type="text/css" href="./css/component.css">
+    <link rel="stylesheet" type="text/css" href="./css/small.css" media="(max-width: 700px)">
+    <link rel="stylesheet" type="text/css" href="./css/medium.css" media="(max-width: 1300px) and (min-width: 700px)">
+    <link rel="stylesheet" type="text/css" href="./css/large.css" media="(min-width: 1300px)">
+  </head>
+  <body>
+    <header>
+      
+        <!-- Site Branding -->
+        <img id="logo" class="inline-logo" src="/images/weather-icon.png" alt="cloud with snow">
+        <div id="title-bar" class="inline-logo">
+          <h1 id="title">Climate Check</h1>
+          <p id="tagline">Check in a snap!</p>
+        </div>
+
+      <!-- Navigation Menu -->
+      <nav id="navbar" class="hidden">
+        <ul>
+          <li id="home-link"><a class="nav-link" href="index.html">Home</a></li>
+          <li id="preston-link"><a class="nav-link" href="#">Preston</a></li>
+          <li id="soda-link"><a class="nav-link" href="#">Soda Springs</a></li>
+          <li><a id="menu-button" class="nav-link" href="#">&#9776; Menu</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <main>
+      <!-- Location Data -->
+      <div id="location-data">
+        <h2 id="location-name">Preston</h2>
+        <p id="gps"><span class="bold">Gps: </span>42.543, 111.5231</p>
+      </div>
+      
+
+      <!-- element to hold image behind all weather tiles -->
+      <div id="weather-image" class="rain">
+
+        <!-- current condition weather tile -->
+        <section id="weather-temps" class="tile">
+	  		 <p id="high"><span id="displayedHigh">??</span>&deg;F</p>
+          <h3 id="temp"><span id="displayedTemp">??</span>&deg;F</h3>
+          <p id="low"><span id="displayedLow">??</span>&deg;F</p>
+          <p id="feels-like">Feels Like: <span id="feelTemp">??</span>&deg;F</p>
+          <p id="wind-speed" class="wind"><span id="displayedWind">??.??</span>mph</p>
+          <p id="wind-gusts" class="wind">Gusts: <span id="displayedGusts">??</span>mph</p>
+        </section>
+      
+        <!-- tiles for weather forecast -->
+        <div id="weather-details">
+ 
+          <!--Dial for Temperature-->
+          <section id="temperature" class="tile">
+            <h3>Temperature</h3>
+            <div class="component">
+              <div class="o1 outer"><p>51</p></div>
+              <div class="o2 outer"><p>53</p></div>
+              <div class="o3 outer"><p>55</p></div>
+              <div class="o4 outer"><p>57</p></div>
+              <div class="o5 outer"><p>58</p></div>
+              <div class="o6 outer"><p>57</p></div>
+              <div class="o7 outer"><p>58</p></div>
+              <div class="o8 outer"><p>58</p></div>
+              <div class="o9 outer"><p>55</p></div>
+              <div class="o10 outer"><p>53</p></div>
+              <div class="o11 outer"><p>52</p></div>
+              <div class="inner"></div>
+              <!-- <div class="slider i0"></div> -->
+              <div class="edge1"></div>
+              <div class="edge2"></div>
+              
+              <div class="i1 ib"><p>1</p></div>
+              <div class="i2 ib"><p>2</p></div>
+              <div class="i3 ib"><p>3</p></div>
+              <div class="i4 ib"><p>4</p></div>
+              <div class="i5 ib"><p>5</p></div>
+              <div class="i6 ib"><p>6</p></div>
+              <div class="i7 ib"><p>7</p></div>
+              <div class="i8 ib"><p>8</p></div>
+              <div class="i9 ib"><p>9</p></div>
+              <div class="i10 ib"><p>10</p></div>
+              <div class="i11 ib"><p>11</p></div>
+
+              <div class="center">&deg;F</div>
+            </div>
+          </section>
+
+          <!--Dial for Percipitation-->
+          <section id="percipitation" class="tile">
+            <h3>Percipitation</h3>
+            <div class="component">
+              <div class="o1 outer"><p>40</p></div>
+              <div class="o2 outer"><p>20</p></div>
+              <div class="o3 outer"><p>20</p></div>
+              <div class="o4 outer"><p>20</p></div>
+              <div class="o5 outer"><p>20</p></div>
+              <div class="o6 outer"><p>10</p></div>
+              <div class="o7 outer"><p>20</p></div>
+              <div class="o8 outer"><p>20</p></div>
+              <div class="o9 outer"><p>30</p></div>
+              <div class="o10 outer"><p>20</p></div>
+              <div class="o11 outer"><p>10</p></div>
+              <div class="inner"></div>
+              <!-- <div class="slider i0"></div> -->
+              <div class="edge1"></div>
+              <div class="edge2"></div>
+            
+              <div class="i1 ib"><p>1</p></div>
+              <div class="i2 ib"><p>2</p></div>
+              <div class="i3 ib"><p>3</p></div>
+              <div class="i4 ib"><p>4</p></div>
+              <div class="i5 ib"><p>5</p></div>
+              <div class="i6 ib"><p>6</p></div>
+              <div class="i7 ib"><p>7</p></div>
+              <div class="i8 ib"><p>8</p></div>
+              <div class="i9 ib"><p>9</p></div>
+              <div class="i10 ib"><p>10</p></div>
+              <div class="i11 ib"><p>11</p></div>
+
+              <div class="center">&#9730;<span class="small-percent">%</span></div>
+            </div>
+          </section>
+
+          <!--Dial for Conditions-->
+          <section id="conditions" class="tile">
+            <h3>Conditions</h3>
+            <div class="component">
+              <div class="o1 outer"><p>&#127785;</p></div>
+              <div class="o2 outer"><p>&#9729;</p></div>
+              <div class="o3 outer"><p>&#9729;</p></div>
+              <div class="o4 outer"><p>&#9729;</p></div>
+              <div class="o5 outer"><p>&#9729;</p></div>
+              <div class="o6 outer"><p>&#9729;</p></div>
+              <div class="o7 outer"><p>&#127780;</p></div>
+              <div class="o8 outer"><p>&#127780;</p></div>
+              <div class="o9 outer"><p>&#127783;</p></div>
+              <div class="o10 outer"><p><span class="moon">&#9790;</span>&#9729;</p></div>
+              <div class="o11 outer"><p><span class="moon">&#9790;</span>&#9729;</p></div>
+              <div class="inner"></div>
+              <!-- <div class="slider i0"></div> -->
+              <div class="edge1"></div>
+              <div class="edge2"></div>
+              
+              <div class="i1 ib"><p>1</p></div>
+              <div class="i2 ib"><p>2</p></div>
+              <div class="i3 ib"><p>3</p></div>
+              <div class="i4 ib"><p>4</p></div>
+              <div class="i5 ib"><p>5</p></div>
+              <div class="i6 ib"><p>6</p></div>
+              <div class="i7 ib"><p>7</p></div>
+              <div class="i8 ib"><p>8</p></div>
+              <div class="i9 ib"><p>9</p></div>
+              <div class="i10 ib"><p>10</p></div>
+              <div class="i11 ib"><p>11</p></div>
+
+              <div class="center"></div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="small-footer">
+        <p class="copyr">&copy; <span id="currentyear"></span> | Brandon Layton | <a href=" https://developer.mozilla.org/en-US/">MDN documentation site</a> | BYU-Idaho</p>
+        <p class="last-update">Last Updated: <span id="modified"></span></p>
+    </footer>
+
+    <!-- load javascript after document loads -->
+    <script src="./js/functions.js"></script>    
+
+ </body>
+</html>

@@ -24,25 +24,28 @@ F003 - getActualYear()          - To Get the actual Year
 F004 - hamMenu()                - To set the Hamburguer Menu for Small Screen
 F005 - updateFeelsLikeTemp()    - To Update feels Like Temperature
 F006 - buildWC()                - To Calculate the Feels Like Temperature
+F007 - timeIndicator()          - Set the current time at the dial
+F008 - changeSummaryImage(...)  - To Change the background image
 
 ***/
 
 
 
 //F000 - DOMContentLoaded
+/*****************************************************************************/
 document.addEventListener("DOMContentLoaded", function(){
     
     buildModDate();                  // Call the modified Data 
     hamMenu();                       // Call Hamburguer Menu 
     updateFeelsLikeTemp();           // Call Update feels Like Temperature
-    
-    //checkPoint
-    console.log(" CheckPoint - DOMContentLeaded main function() ");
-
     timeIndicator(actualHour);       // Call Time Indicator
-    backGrdImage(currCond);          // Call Backgound Image
+    changeSummaryImage(currCond);    // Call Backgound Image
 
+    //checkPoint
+    console.log(" CheckPoint - DOMContentLeaded ... is running ok ");
 })
+/*****************************************************************************/
+
 
 
 //F001 Build the modified Data function
@@ -100,11 +103,19 @@ function timeIndicator(actualHour) {
 };       
 
 
-//F008 Set the BackGroundImage
-function backGrdImage(currCond) {
 
-   //TODO - buid the function
+/****************************************************************************
+ * Change the info in the summary box
+ ****************************************************************************/
+function changeSummaryImage(currCond)
+{
+	//get the html elements
+	const backgroundImage = document.getElementById("information");
 
+	//set the class attribute for the backgropund image
+	backgroundImage.setAttribute("class", currCond);
 
-};
-
+    //send info to console
+    console.log("condition = " + currCond);
+    console.groupEnd();
+}

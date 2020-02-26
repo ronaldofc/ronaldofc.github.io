@@ -116,7 +116,7 @@ nav {
 
 
 /*Information Session */
-.information {
+#information {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -290,10 +290,29 @@ footer {
     background-size: cover;
    }
    
-/* Background pictures for summary   */  
-.clear {
-  background-image: url("/weather/images/clear_small.jpg");
+
+
+/* background images for behind tiles */
+.rain {
+  background-image: url("../images/rain-small.jpg");
 }
+
+.snow {
+  background-image: url("../images/snow-small.jpg");
+}
+
+.clouds {
+  background-image: url("../images/clouds-small.jpg");
+}
+
+.clear {
+  background-image: url("../images/clear-small.jpg");
+}
+
+.fog {
+  background-image: url("../images/fog-small.jpg");
+}
+
 
 
 
@@ -303,14 +322,14 @@ footer {
       width: 100%;
     }  
     body {
-      width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-  main {
-    display: block;
-  }
+    main {
+      display: block;
+    }
 
     /*Information Session */ 
     .information {
@@ -321,98 +340,116 @@ footer {
       width: 100%;
     }
 
-  /*Navigation menu */
-nav {
-  position: static;
-  display: flex;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(74, 21, 92);
-}
-.navigation {
-   display: flex;
-}
-  ul {
-    padding: 0;
-    margin: 0;
-    display: block;
-    width: 100%;
-  }
-.navigation li:first-child {  /*hidden the menu icon */
-  display: none;
-}
-.navigation li {
-  display: block; /* needed because of state in small view */
-  flex: 1 1 100%;
-}
-.navigation li a {
-  text-align: center;
-}
-.navigation a {
-  display: block;
-  width: 100%;
-  color:  white;
-  padding: 0.75rem;
-  text-align: left;
-  text-decoration: none;
-}
-.navigation a:hover {
-  color: #000;
-  background-color: gray;
-  font-weight: 700;
-}
-.responsive li {    /* the onclick JS toggles */
-  display: block;
+    /*Navigation menu */
+    nav {
+      position: static;
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(74, 21, 92);
+    }
+    .navigation {
+      display: flex;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      display: block;
+      width: 100%;
+    }
+    .navigation li:first-child {  /*hidden the menu icon */
+      display: none;
+    }
+    .navigation li {
+      display: block; /* needed because of state in small view */
+      flex: 1 1 100%;
+    }
+    .navigation li a {
+      text-align: center;
+    }
+    .navigation a {
+      display: block;
+      width: 100%;
+      color:  white;
+      padding: 0.75rem;
+      text-align: left;
+      text-decoration: none;
+    }
+    .navigation a:hover {
+      color: #000;
+      background-color: gray;
+      font-weight: 700;
+    }
+    .responsive li {    /* the onclick JS toggles */
+      display: block;
+    }
+    
+    
+    /*********************************/
+    /*Information Session            */
+    /*********************************/
+    .information {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+    }
+
+    .info-main{
+      width: 100%;
+      height: 100px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .info-temperature{
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .info-precipitation{
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+      
+    .info-conditions{
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }  
+    
+    footer {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* background images for behind tiles */
+    .rain {
+      background-image: url("../images/rain-large.jpg");
+    }
+
+    .snow {
+      background-image: url("../images/snow-large.jpg");
+    }
+
+    .clouds {
+      background-image: url("../images/clouds-large.jpg");
+    }
+
+    .clear {
+      background-image: url("../images/clear-large.jpg");
+    }
+
+    .fog {
+      background-image: url("../images/fog-large.jpg");
+    }
+
 }
   
-  
-/*********************************/
-/*Information Session            */
-/*********************************/
-  .information {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-}
 
-.info-main{
-  width: 100%;
-  height: 100px;
-  margin: 0;
-  padding: 0;
- }
-
-.info-temperature{
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.info-precipitation{
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-}
-     
-.info-conditions{
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-}  
-  
-   footer {
-     margin-top: 20px;
-     margin-bottom: 10px;
-   }
-}
-  
-
-/* Background pictures for summary large Screen  */
-.clear {
-    background-image: url("/weather/images/clear_large.jpg");
-}
 
