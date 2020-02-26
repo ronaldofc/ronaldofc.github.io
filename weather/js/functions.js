@@ -19,7 +19,7 @@ var speed = 5;
 *********************************************************************************
 F000 - function()               - DOMContentLoaded
 F001 - buildModDate()           - Build the modified Data function 
-F002 - function actualDate()    - Build the actual date Customized
+F002 - actualDate()             - Build the actual date Customized
 F003 - getActualYear()          - To Get the actual Year
 F004 - hamMenu()                - To set the Hamburguer Menu for Small Screen
 F005 - updateFeelsLikeTemp()    - To Update feels Like Temperature
@@ -35,11 +35,12 @@ F008 - changeSummaryImage(...)  - To Change the background image
 /*****************************************************************************/
 document.addEventListener("DOMContentLoaded", function(){
     
-    buildModDate();                  // Call the modified Data 
-    hamMenu();                       // Call Hamburguer Menu 
-    updateFeelsLikeTemp();           // Call Update feels Like Temperature
-    timeIndicator(actualHour);       // Call Time Indicator
-    changeSummaryImage(currCond);    // Call Backgound Image
+    buildModDate();                  
+    actualDate();                    
+    hamMenu();                       
+    updateFeelsLikeTemp();           
+    timeIndicator(actualHour);     
+    changeSummaryImage(currCond);  
 
     //checkPoint console
     console.log(" CheckPoint - DOMContentLeaded ... is running ok ");
