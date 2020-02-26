@@ -181,6 +181,18 @@ nav {
   text-align: center;
   font-size: 25px;
   color: red;
+  
+}
+
+#wind-std {
+width: 33%;
+align-self: left;
+}
+
+
+#wind-gusts{
+width: 33%;
+align-self: right;
 }
 
 
