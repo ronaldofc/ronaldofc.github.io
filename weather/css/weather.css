@@ -311,6 +311,14 @@ color: black;
 .m-11 { margin-top: -100px; margin-left:  -80px; }
 
 
+.ball{
+  width: 20px;
+  height: 20px;
+  background-color: lightgreen;
+  border-radius: 100%;
+}
+
+
 /*   Footer   */
 footer {
   margin-bottom: 65px;

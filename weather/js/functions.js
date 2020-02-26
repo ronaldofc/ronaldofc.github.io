@@ -99,7 +99,9 @@ function buildWC(speed, temp) {
 //F007 Time indicador 
 function timeIndicator(actualHour) {
    
-   //TODO - buid the function
+    //TODO - Change hours class to ID 
+    //     - Retirar numero zero das horas
+    //     - utilizar mesmo modelo func() changeSummaryImage 
 
 };       
 
