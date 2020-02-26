@@ -147,7 +147,7 @@ nav {
 #temp-high{
   width: 33%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 25px;
   color: red;
 }
 
@@ -155,14 +155,14 @@ nav {
 #temp-actual{
   width: 33%;
   text-align: center;
-  font-size: 5rem;
+  font-size: 55px;
   color: green;
 }
 
 #temp-low{
   text-align: center;
   width: 33%;
-  font-size: 2.5rem;
+  font-size: 25px;
   color: blue;
 }
 
