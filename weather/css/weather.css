@@ -395,6 +395,9 @@ footer {
       display: block;
     }
 
+    .location {
+      height: 90px;
+    }
     /*Information Session */ 
     #information {
       display: flex;
