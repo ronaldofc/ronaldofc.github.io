@@ -131,7 +131,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   align-content: space-between;
-  
+
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -151,7 +151,7 @@ nav {
 #temp-high{
   width: 33%;
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
   color: red;
 }
 
@@ -159,21 +159,23 @@ nav {
 #temp-actual{
   width: 33%;
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   color: green;
 }
 
 #temp-low{
   text-align: center;
   width: 33%;
-  font-size: 15px;
+  font-size: 25px;
   color: blue;
 }
 
 #feels-like{
   width: 100%;
+  padding: 0;
+  border: 0;
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
   color: red;
 }
 
