@@ -9,7 +9,7 @@ console.log('My javascript is being read.');        //Test if this file is runni
 
 /* GLOBAL VARIABLES
 *********************************************************************************/
-var currCond = "rain";          // weather (rain, snow, clouds, clear, fog)
+var currCond = "rain";          // weather (rain, snow, clouds, clear, fog) 
 var actualHour = 6;             // Time Indicator
 var temp = 31;
 var speed = 5;
