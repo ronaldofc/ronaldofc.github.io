@@ -312,11 +312,30 @@ color: black;
 
 
 .ball{
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: lightgreen;
   border-radius: 100%;
+  z-index: 7;
 }
+
+
+/* Property value for ball indicator */
+.ball-example{
+  position: inherit;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(14, 13, 13);
+  border-radius: 100%;
+  z-index: 7;
+  text-align: center;
+  color: white;
+
+}
+
+
+
+
 
 
 /*   Footer   */

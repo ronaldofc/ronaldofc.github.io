@@ -10,7 +10,7 @@ console.log('My javascript is being read.');        //Test if this file is runni
 /* GLOBAL VARIABLES
 *********************************************************************************/
 var currCond = "clear";          // weather (rain, snow, clouds, clear, fog) 
-var actualHour = 6;             // Time Indicator
+var actualHour = "08";             // Time Indicator
 var temp = 31;
 var speed = 5;
 
@@ -102,6 +102,24 @@ function timeIndicator(actualHour) {
     //TODO - Change hours class to ID 
     //     - Retirar numero zero das horas
     //     - utilizar mesmo modelo func() changeSummaryImage 
+
+    
+    
+    //get the html elements
+    const hourPositionTemp = document.getElementById("t"+actualHour);
+    const hourPositionPrec = document.getElementById("p"+actualHour);
+    const hourPositionCond = document.getElementById("c"+actualHour);
+
+	//set the class attribute for the backgropund image
+    hourPositionTemp.setAttribute("class", "hour number-"+actualHour+" ball" );
+    hourPositionPrec.setAttribute("class", "hour number-"+actualHour+" ball" );
+    hourPositionCond.setAttribute("class", "hour number-"+actualHour+" ball" );
+
+
+    //<div id="p10" class="hour number-10">10</div>
+
+    //checkPoint
+    console.log(" CheckPoint - hour ball -> ok ");
 
 };       
 
