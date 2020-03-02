@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link ref="shortcup icon" href="/weather/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Ronaldo Correa">
@@ -10,12 +11,7 @@
         content="Main webpage for kidsweather.com website developed by Ronaldo Correa. This is part of class assignment, CIT-230 Winter 2020 BYUI">
     <title>kidsweather.com</title>
 
-    
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-
-    <!-- TODO - Check verification  error
-    <link ref="shortcup icon" href="/weather/images/favicon.ico">
-    -->
 
     <link rel="stylesheet" href="/weather/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/weather/css/weather.css" media="screen">
@@ -49,136 +45,145 @@
         <div id="information" class="clear"> 
   
             <div class="info-main">
-
                 <div id="temp-low"><span>34</span>&#8457;</div>
                 <div id="temp-actual"><span>51</span>&#8457;</div>
                 <div id="temp-high"><span>58</span>&#8457;</div>
-
                 <p id="feels-like">Feels Like <span id="feelTemp">??</span>°F</p>
-
                 <div id="wind-std">Wind: <span> 4.8</span>mph</div>
                 <div id="wind-gusts">Gusts: <span>8</span>mph</div>
-
             </div>    
     
-            <div class="info-temperature">            
-                <div class="component">
-                    <!-- Circle  -->
-                    <div class="circle-main">
-                        <div class="circle-inner">
-                        </div>
+            <div class="info-dial"> 
+                
+                
+                <div class="info-temperature">
+                    <!-- Componente Title  -->
+                    <div class="dial-title">
+                        <p>Temperature </p>
                     </div>
-                    <!-- Circle - Cengter Symbol -->
-                    <div class="center-symbol"><span>&#8457;</span></div>
-                    <!-- Circle - Hours of the Day-->
-                    <div id="t12" class="hour number-12">12</div>
-                    <div id="t01" class="hour number-01">01</div>
-                    <div id="t02" class="hour number-02">02</div>
-                    <div id="t03" class="hour number-03">03</div>
-                    <div id="t04" class="hour number-04">04</div>
-                    <div id="t05" class="hour number-05">05</div>
-                    <div id="t06" class="hour number-06">06</div>
-                    <div id="t07" class="hour number-07">07</div>
-                    <div id="t08" class="hour number-08">08</div>
-                    <div id="t09" class="hour number-09">09</div>
-                    <div id="t10" class="hour number-10">10</div>
-                    <div id="t11" class="hour number-11">11</div>
-                    <!-- Circle - External numbers-->
-                    <div class="mensure m-12">00</div>
-                    <div class="mensure m-01">10</div>
-                    <div class="mensure m-02">20</div>
-                    <div class="mensure m-03">30</div>
-                    <div class="mensure m-04">40</div>
-                    <div class="mensure m-05">50</div>
-                    <div class="mensure m-06">60</div>
-                    <div class="mensure m-07">70</div>
-                    <div class="mensure m-08">80</div>
-                    <div class="mensure m-09">90</div>
-                    <div class="mensure m-10">00</div>
-                    <div class="mensure m-11">10</div>
+                    <!-- Componente Dial  -->
+                    <div class="container-dial">
+                        <!-- Circle  -->
+                        <div class="circle-main">
+                            <div class="circle-inner">
+                            </div>
+                        </div>
+                        <!-- Circle - Cengter Symbol -->
+                        <div class="center-symbol"><span>&#8457;</span></div>
+                        <!-- Circle - Hours of the Day-->
+                        <div id="t12" class="hour number-12">12</div>
+                        <div id="t01" class="hour number-01">01</div>
+                        <div id="t02" class="hour number-02">02</div>
+                        <div id="t03" class="hour number-03">03</div>
+                        <div id="t04" class="hour number-04">04</div>
+                        <div id="t05" class="hour number-05">05</div>
+                        <div id="t06" class="hour number-06">06</div>
+                        <div id="t07" class="hour number-07">07</div>
+                        <div id="t08" class="hour number-08">08</div>
+                        <div id="t09" class="hour number-09">09</div>
+                        <div id="t10" class="hour number-10">10</div>
+                        <div id="t11" class="hour number-11">11</div>
+                        <!-- Circle - External numbers-->
+                        <div class="mensure m-12">00</div>
+                        <div class="mensure m-01">10</div>
+                        <div class="mensure m-02">20</div>
+                        <div class="mensure m-03">30</div>
+                        <div class="mensure m-04">40</div>
+                        <div class="mensure m-05">50</div>
+                        <div class="mensure m-06">60</div>
+                        <div class="mensure m-07">70</div>
+                        <div class="mensure m-08">80</div>
+                        <div class="mensure m-09">90</div>
+                        <div class="mensure m-10">00</div>
+                        <div class="mensure m-11">10</div>
+                    </div>
                 </div>
-            </div>
-    
-            <div class="info-precipitation">           
-                <div class="component">
-                    <!-- Circle  -->
-                    <div class="circle-main">
-                        <div class="circle-inner">
-                        </div>
-                    </div>
-                    <!-- Circle - Cengter Symbol -->
-                    <div class="center-symbol"><span>&#9730;</span>%</div>
-                    <!-- Circle - Hours of the Day-->
-                    <div id="p12" class="hour number-12">12</div>
-                    <div id="p01" class="hour number-01">01</div>
-                    <div id="p02" class="hour number-02">02</div>
-                    <div id="p03" class="hour number-03">03</div>
-                    <div id="p04" class="hour number-04">04</div>
-                    <div id="p05" class="hour number-05">05</div>
-                    <div id="p06" class="hour number-06">06</div>
-                    <div id="p07" class="hour number-07">07</div>
-                    <div id="p08" class="hour number-08">08</div>
-                    <div id="p09" class="hour number-09">09</div>
-                    <div id="p10" class="hour number-10">10</div>
-                    <div id="p11" class="hour number-11">11</div>
-                
-                    <!-- Circle - External numbers-->
-                    <div class="mensure m-12">00</div>
-                    <div class="mensure m-01">10</div>
-                    <div class="mensure m-02">20</div>
-                    <div class="mensure m-03">30</div>
-                    <div class="mensure m-04">40</div>
-                    <div class="mensure m-05">50</div>
-                    <div class="mensure m-06">60</div>
-                    <div class="mensure m-07">70</div>
-                    <div class="mensure m-08">80</div>
-                    <div class="mensure m-09">90</div>
-                    <div class="mensure m-10">00</div>
-                    <div class="mensure m-11">10</div>
-                </div>    
-            </div>
-    
-            <div class="info-conditions">
-                
-                <div class="component">
 
-                    <!-- Circle  -->
-                    <div class="circle-main">
-                        <div class="circle-inner">
-                        </div>
+                <div class="info-precipitation"> 
+                    <!-- Componente Title  -->                      
+                    <div class="dial-title">
+                        <p>Precipitation</p>
                     </div>
-                
-                    <!-- Circle - Hours of the Day-->
-                    <div class="indicator"></div>
-                    <div id="c12" class="hour number-12">12</div>
-                    <div id="c01" class="hour number-01">01</div>
-                    <div id="c02" class="hour number-02">02</div>
-                    <div id="c03" class="hour number-03">03</div>
-                    <div id="c04" class="hour number-04">04</div>
-                    <div id="c05" class="hour number-05">05</div>
-                    <div id="c06" class="hour number-06">06</div>
-                    <div id="c07" class="hour number-07">07</div>
-                    <div id="c08" class="hour number-08">08</div>
-                    <div id="c09" class="hour number-09">09</div>
-                    <div id="c10" class="hour number-10">10</div>
-                    <div id="c11" class="hour number-11">11</div>
-                
-                    <!-- Circle - External numbers-->
-                    <div class="mensure m-12">&#9729;</div>
-                    <div class="mensure m-01">&#9729;</div>
-                    <div class="mensure m-02">&#9729;</div>
-                    <div class="mensure m-03">&#9729;</div>
-                    <div class="mensure m-04">&#9729;</div>
-                    <div class="mensure m-05">&#9729;</div>
-                    <div class="mensure m-06">&#9729;</div>
-                    <div class="mensure m-07">&#9729;</div>
-                    <div class="mensure m-08">&#9729;</div>
-                    <div class="mensure m-09">&#9729;</div>
-                    <div class="mensure m-10">&#9729;</div>
-                    <div class="mensure m-11">&#9729;</div>
+                    <!-- Componente Dial  -->
+                    <div class="container-dial">  
+                        <!-- Circle  -->
+                        <div class="circle-main">
+                            <div class="circle-inner">
+                            </div>
+                        </div>
+                        <!-- Circle - Cengter Symbol -->
+                        <div class="center-symbol"><span>&#9730;</span>%</div>
+                        <!-- Circle - Hours of the Day-->
+                        <div id="p12" class="hour number-12">12</div>
+                        <div id="p01" class="hour number-01">01</div>
+                        <div id="p02" class="hour number-02">02</div>
+                        <div id="p03" class="hour number-03">03</div>
+                        <div id="p04" class="hour number-04">04</div>
+                        <div id="p05" class="hour number-05">05</div>
+                        <div id="p06" class="hour number-06">06</div>
+                        <div id="p07" class="hour number-07">07</div>
+                        <div id="p08" class="hour number-08">08</div>
+                        <div id="p09" class="hour number-09">09</div>
+                        <div id="p10" class="hour number-10">10</div>
+                        <div id="p11" class="hour number-11">11</div>
+                        <!-- Circle - External numbers-->
+                        <div class="mensure m-12">00</div>
+                        <div class="mensure m-01">10</div>
+                        <div class="mensure m-02">20</div>
+                        <div class="mensure m-03">30</div>
+                        <div class="mensure m-04">40</div>
+                        <div class="mensure m-05">50</div>
+                        <div class="mensure m-06">60</div>
+                        <div class="mensure m-07">70</div>
+                        <div class="mensure m-08">80</div>
+                        <div class="mensure m-09">90</div>
+                        <div class="mensure m-10">00</div>
+                        <div class="mensure m-11">10</div>  
+                    </div>     
                 </div>
+        
+                <div class="info-conditions">
+                    <!-- Componente Title  -->                      
+                    <div class="dial-title">
+                        <p>Conditions</p>
+                    </div>
+                    <!-- Componente Dial  -->
+                    <div class="container-dial">
+                        <!-- Circle  -->
+                        <div class="circle-main">
+                            <div class="circle-inner">
+                            </div>
+                        </div>
+                        <!-- Circle - Hours of the Day-->
+                        <div class="indicator"></div>
+                        <div id="c12" class="hour number-12">12</div>
+                        <div id="c01" class="hour number-01">01</div>
+                        <div id="c02" class="hour number-02">02</div>
+                        <div id="c03" class="hour number-03">03</div>
+                        <div id="c04" class="hour number-04">04</div>
+                        <div id="c05" class="hour number-05">05</div>
+                        <div id="c06" class="hour number-06">06</div>
+                        <div id="c07" class="hour number-07">07</div>
+                        <div id="c08" class="hour number-08">08</div>
+                        <div id="c09" class="hour number-09">09</div>
+                        <div id="c10" class="hour number-10">10</div>
+                        <div id="c11" class="hour number-11">11</div>
+                        <!-- Circle - External numbers-->
+                        <div class="mensure m-12">&#9729;</div>
+                        <div class="mensure m-01">&#9729;</div>
+                        <div class="mensure m-02">&#9729;</div>
+                        <div class="mensure m-03">&#9729;</div>
+                        <div class="mensure m-04">&#9729;</div>
+                        <div class="mensure m-05">&#9729;</div>
+                        <div class="mensure m-06">&#9729;</div>
+                        <div class="mensure m-07">&#9729;</div>
+                        <div class="mensure m-08">&#9729;</div>
+                        <div class="mensure m-09">&#9729;</div>
+                        <div class="mensure m-10">&#9729;</div>
+                        <div class="mensure m-11">&#9729;</div>
+                    </div>   
+                </div>     
             </div>
-          
         </div> 
 
     </main>

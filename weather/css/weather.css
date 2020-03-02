@@ -121,7 +121,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 1100px; 
+  height: 1450px; 
   background-size: cover;
   /*padding-top: 20px;*/
 }
@@ -190,7 +190,6 @@ color: black;
 }
 
 #wind-gusts{
-
 width: 33%;
 color: black;
 }
@@ -199,35 +198,75 @@ color: black;
   width: 30px;
 }
 
-.info-temperature{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.info-dial{
+width: 100%;
+display: block;
+}
+
+.dial-title{
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 25px;
+}
+
+
+.container-dial{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 300px;
-  margin-top: 10px;
-  font-weight: bold;
-   border: 1px solid navy;
+
+}
+
+.info-temperature{
+  display: block;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  border: 1px solid navy;
+
+  color: black;
+  background-color: rgba(252, 245, 245, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(144, 130, 130);
+  margin: 20px auto;
+
 }
 
 .info-precipitation{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
   width: 300px;
-  height: 300px;
-  margin-top: 10px;
+  height: 400px;
   border: 1px solid navy;
+
+  color: black;
+  background-color: rgba(252, 245, 245, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(144, 130, 130);
+  margin: 20px auto;
+
 }
      
+
 .info-conditions{
   display: block;
-  margin-left: auto;
-  margin-right: auto;  
+  align-items: center;
   width: 300px;
-  height: 300px;
-  margin-top: 10px;
+  height: 400px;
   border: 1px solid navy;
+
+  color: black;
+  background-color: rgba(252, 245, 245, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(144, 130, 130);
+  margin: 20px auto;
+
 }
 
 
@@ -486,6 +525,25 @@ footer {
     /*********************************/
     /*Information Session            */
     /*********************************/
+
+
+    .info-dial{
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .info-main{
+      width: 100%;
+      height: 130px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 0;
+    }
+
+
+/*    
     .information {
       display: flex;
       flex-wrap: wrap;
@@ -495,12 +553,7 @@ footer {
       height: auto;
     }
 
-    .info-main{
-      width: 100%;
-      height: 130px;
-      margin: 0;
-      padding: 0;
-    }
+
 
     .info-temperature{
       margin: 0;
@@ -519,7 +572,16 @@ footer {
       padding: 0;
       margin-top: 10px;
     }  
-    
+    */
+
+
+
+
+
+
+
+
+
     footer {
       margin-top: 20px;
       margin-bottom: 10px;
