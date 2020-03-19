@@ -98,24 +98,21 @@ nav {
 }
 
 /* Location */
-
-#infoLocal {
+.location {
   display: block;
-  padding-top: 90px;
-  height: 130px;
-  align-content: center;
-  text-align: center;
+  height: 150px;
 }
-
-#location {
-  font-size:  25px;
-  height: 30px;
+.location h2 {
+  color: darkblue;
+  margin: 0;
+  padding-left: 50px;
+  font-size:  45px;
 }
-#gps {
-  font-size: 20px;
-  height: 30px;
+.location p {
+  margin: 0;
+  padding-left: 45px;
+  color: black;
 }
-
 
 
 /*Information Session */
@@ -160,11 +157,12 @@ nav {
   color: red;
 }
 
+
 #temp-actual{
   width: 33%;
-  height: 40px;
+  height: 60px;
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
   color: green;
 }
 
@@ -181,20 +179,19 @@ nav {
   height: 15px;
   border: 0;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
   color: red;
+
 }
 
 #wind-std {
 width: 50%;
 color: black;
-font-size: 15px;
 }
 
 #wind-gusts{
 width: 33%;
 color: black;
-font-size: 15px;
 }
 
 #windicon{
@@ -209,7 +206,7 @@ display: block;
 .dial-title{
   text-align: center;
   font-family: Ubuntu;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 
@@ -239,7 +236,7 @@ display: block;
 
 }
 
-.info-wind{
+.info-precipitation{
   display: block;
   align-items: center;
   width: 300px;
@@ -271,7 +268,6 @@ display: block;
   margin: 20px auto;
 
 }
-
 
 
 /* Component */
@@ -320,18 +316,18 @@ display: block;
   Font-size: 20px;
   font-weight: bold;
 }
-.number-12{ margin-top: -88px; margin-left:   auto; }
-.number-01{ margin-top: -78px; margin-left:   45px; }
-.number-02{ margin-top: -47px; margin-left:   75px; }
+.number-12{ margin-top: -90px; margin-left:   auto; }
+.number-01{ margin-top: -80px; margin-left:   45px; }
+.number-02{ margin-top: -45px; margin-left:   80px; }
 .number-03{ margin-top:     0; margin-left:   88px; }
-.number-04{ margin-top:  43px; margin-left:   75px; }
-.number-05{ margin-top:  75px; margin-left:   45px; }
-.number-06{ margin-top:  88px; margin-left:   auto; }
+.number-04{ margin-top:  43px; margin-left:   78px; }
+.number-05{ margin-top:  75px; margin-left:   50px; }
+.number-06{ margin-top:  85px; margin-left:   auto; }
 .number-07{ margin-top:  75px; margin-left:  -44px; }
-.number-08{ margin-top:  43px; margin-left:  -76px; }
+.number-08{ margin-top:  45px; margin-left:  -80px; }
 .number-09{ margin-top:     0; margin-left:  -88px; }
-.number-10{ margin-top: -45px; margin-left:  -76px; }
-.number-11{ margin-top: -78px; margin-left:  -44px; }
+.number-10{ margin-top: -45px; margin-left:  -80px; }
+.number-11{ margin-top: -80px; margin-left:  -44px; }
 
 
 .mensure {
@@ -340,60 +336,18 @@ display: block;
   Font-size: 25px;
   font-weight: bold;
 }
-
-#mt-12 { margin-top: -120px; margin-left:   auto; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-1  { margin-top: -100px; margin-left:   70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-2  { margin-top:  -55px; margin-left:  110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-3  { margin-top:      0; margin-left:  125px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-4  { margin-top:   55px; margin-left:  110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-5  { margin-top:  105px; margin-left:   70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-6  { margin-top:  120px; margin-left:   auto; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-7  { margin-top:  105px; margin-left:  -70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-8  { margin-top:   60px; margin-left: -105px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-9  { margin-top:      0; margin-left: -125px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-10 { margin-top:  -55px; margin-left: -110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mt-11 { margin-top: -100px; margin-left:  -70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-
-#mw-12 { margin-top: -120px; margin-left:   auto; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-1  { margin-top: -100px; margin-left:   70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-2  { margin-top:  -55px; margin-left:  110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-3  { margin-top:      0; margin-left:  125px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-4  { margin-top:   55px; margin-left:  110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-5  { margin-top:  105px; margin-left:   70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-6  { margin-top:  120px; margin-left:   auto; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-7  { margin-top:  105px; margin-left:  -70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-8  { margin-top:   60px; margin-left: -105px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-9  { margin-top:      0; margin-left: -125px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-10 { margin-top:  -55px; margin-left: -110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mw-11 { margin-top: -100px; margin-left:  -70px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-
-#mc-12 { margin-top: -120px; margin-left:   35px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-1  { margin-top: -100px; margin-left:  110px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-2  { margin-top:  -55px; margin-left:  145px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-3  { margin-top:      0; margin-left:  160px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-4  { margin-top:   55px; margin-left:  145px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-5  { margin-top:  105px; margin-left:  100px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-6  { margin-top:  120px; margin-left:   35px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-7  { margin-top:  105px; margin-left:  -30px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-8  { margin-top:   60px; margin-left:  -80px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-9  { margin-top:      0; margin-left:  -95px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-10 { margin-top:  -55px; margin-left:  -80px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-#mc-11 { margin-top: -100px; margin-left:  -50px; position: absolute; z-index: 4; Font-size: 25px; font-weight: bold; }
-
-
-/* Constrain condition images */
-#mc-1 img{  max-width: 25%; }
-#mc-2 img{  max-width: 25%; }
-#mc-3 img{  max-width: 25%; }
-#mc-4 img{  max-width: 25%; }
-#mc-5 img{  max-width: 25%; }
-#mc-6 img{  max-width: 25%; }
-#mc-7 img{  max-width: 25%; }
-#mc-8 img{  max-width: 25%; }
-#mc-9 img{  max-width: 25%; }
-#mc-10 img{  max-width: 25%; }
-#mc-11 img{  max-width: 25%; }
-#mc-12 img{  max-width: 25%; }
+.m-12 { margin-top: -120px; margin-left:   auto; }
+.m-01 { margin-top: -100px; margin-left:   70px; }
+.m-02 { margin-top:  -55px; margin-left:  110px; }
+.m-03 { margin-top:      0; margin-left:  120px; }
+.m-04 { margin-top:   55px; margin-left:  110px; }
+.m-05 { margin-top:   95px; margin-left:   70px; }
+.m-06 { margin-top:  115px; margin-left:   auto; }
+.m-07 { margin-top:  100px; margin-left:  -75px; }
+.m-08 { margin-top:   60px; margin-left: -105px; }
+.m-09 { margin-top:      0; margin-left: -120px; }
+.m-10 { margin-top:  -55px; margin-left: -110px; }
+.m-11 { margin-top: -100px; margin-left:  -80px; }
 
 
 .ball{
@@ -417,6 +371,10 @@ display: block;
   color: white;
 
 }
+
+
+
+
 
 
 /*   Footer   */
@@ -485,13 +443,10 @@ footer {
   background-image: url("/weather/images/fog-small.jpg");
 }
 
-.hide {
-  display: none;
-}
 
 
-/*************    @media for large screen    *********************/
-/*****************************************************************/
+
+/* @media for large screen */
 @media only screen and (min-width: 71em) {  
     html {
       width: 100%;
@@ -503,10 +458,12 @@ footer {
     }
 
     main {
-
       display: block;
     }
 
+    .location {
+      height: 90px;
+    }
     /*Information Session */ 
     #information {
       display: flex;
@@ -517,78 +474,6 @@ footer {
       height: 600px;
       background-size: cover;
     }
-
-    #infoLocal {
-      display: block;
-      height: 100px;
-      align-content: center;
-      text-align: left;
-      padding-top: 0px;
-    }
-    
-
-    #temp-high{
-      width: 33%;
-      height: 25px;
-      text-align: center;
-      font-size: 40px;
-      color: red;
-    }
-    
-    #temp-actual{
-      width: 33%;
-      height: 60px;
-      text-align: center;
-      font-size: 70px;
-      color: green;
-    }
-    
-    #temp-low{
-      text-align: center;
-      width: 33%;
-      height: 25px;
-      font-size: 40px;
-      color: blue;
-    }
-    
-    #feels-like{
-      width: 100%;
-      height: 15px;
-      border: 0;
-      text-align: center;
-      font-size: 15px;
-      color: red;
-    }
-    
-    #wind-std {
-    width: 50%;
-    color: black;
-    font-size: 25px;
-    }
-    
-    #wind-gusts{
-    width: 33%;
-    color: black;
-    font-size: 25px;
-    }
-    
-
-
-
-    #location {
-      padding-left: 50px; 
-      padding-top: 10px;
-      font-size:  25px;
-      height: 45px;
-    }
-    #gps {
-      color: darkblue;
-      margin: 0;
-      padding-left: 50px;
-      font-size:  18px;
-      height: 45px;
-    }
-
 
     /*Navigation menu */
     nav {
@@ -636,9 +521,6 @@ footer {
       display: block;
     }
     
-    .hide {
-      display: none;
-    }
     
     /*********************************/
     /*Information Session            */
@@ -659,6 +541,45 @@ footer {
       margin-right: 20px;
       padding: 0;
     }
+
+
+/*    
+    .information {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      height: 600px;
+      height: auto;
+    }
+
+
+
+    .info-temperature{
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .info-precipitation{
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+      
+    .info-conditions{
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }  
+    */
+
+
+
+
+
+
+
 
 
     footer {
