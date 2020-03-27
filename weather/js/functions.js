@@ -14,9 +14,6 @@ var nowHour = todayDate.getHours();
 
 console.log(`nowHour is: ${nowHour}`);
 
-var temp = 31;
-var speed = 5;
-
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
 
@@ -38,22 +35,21 @@ console.log(`Local data cityLoc is: ${cityName}`);
 
 
 
-
 /* FUNCTIONS - Index:
 *********************************************************************************
-F000 - function()               - DOMContentLoaded
-F001 - buildModDate()           - Build the modified Data function 
-F002 - actualDate()             - Build the actual date Customized
-F003 - getActualYear()          - To Get the actual Year
-F004 - hamMenu()                - To set the Hamburguer Menu for Small Screen
-F005 - updateFeelsLikeTemp()    - To Update feels Like Temperature
-F006 - buildWC()                - To Calculate the Feels Like Temperature
-F007 - timeIndicator()          - Set the current time at the dial
-F008 - changeSummaryImage(...)  - To Change the background image
-F009 - fetchWeatherData(weatherURL) 
-F010 - getHourly(URL)  
-F011 - BuildPage()
-
+F000 - function()                          - DOMContentLoaded
+F001 - buildModDate()                      - Build the modified Data function 
+F002 - actualDate()                        - Build the actual date Customized
+F003 - getActualYear()                     - To Get the actual Year
+F004 - hamMenu()                           - To set the Hamburguer Menu for Small Screen
+F005 - updateFeelsLikeTemp()               - To Update feels Like Temperature
+F006 - buildWC()                           - To Calculate the Feels Like Temperature
+F007 - timeIndicator()                     - Set the current time at the dial
+F008 - fetchWeatherData(weatherURL)        - Load the Data from JSON to the variables
+F009 - getHourly(URL)                      - Get Hourly Data
+F010 - convertHour()                       - To Convert the time 24 to 12
+F011 - changeSummaryImage(currCond)        - Change the Background Image
+F012 - buildPage()                         - Build the Weather page
 
 ***/
 
@@ -65,7 +61,8 @@ document.addEventListener("DOMContentLoaded", function(){
     
     buildModDate();                  
     actualDate();                    
-    hamMenu();                               
+    hamMenu(); 
+    //toggleMenu()                              
     timeIndicator();     
     fetchWeatherData(weatherURL);
 
@@ -93,7 +90,6 @@ function actualDate(){
     document.getElementById("actualDate").innerHTML = dateCustomized;
 }
 
-
 //F003 To Get the actual Year
 function getActualYear(){
     var today = new Date();
@@ -105,8 +101,14 @@ function getActualYear(){
 //F004 To Set the hamburguer Menu for Small Screen
 function hamMenu(){
     const hambutton = document.querySelector(".ham");
-    hambutton.addEventListener("click", hambutton);
+    hambutton.addEventListener("click", toggleMenu, false);
 }
+
+function toggleMenu() {
+    document.querySelector(".navigation").classList.toggle("responsive");
+}
+
+
 
 //F005 To Update feels Like Temperature
 function updateFeelsLikeTemp(){
@@ -125,14 +127,13 @@ function buildWC(speed, temp) {
 }
 
 
-//F007 Time indicador 
+//F007 To Setup the Time indicador 
 function timeIndicator() {
    
     var Hour = convertHour();
 
     console.log(`Hour is: ${Hour}`);
     
-
     //get the html elements
     const hourPositionTemp = document.getElementById("t"+Hour);
     const hourPositionPrec = document.getElementById("p"+Hour);
@@ -148,11 +149,9 @@ function timeIndicator() {
 
 }       
 
-//F009 
+//F008 Load the Data from JSON to the variables
 function fetchWeatherData(weatherURL)
 {
-    //let cityName = 'Preston';    // The data we want from the weather.json file
-
     fetch(weatherURL)
     .then(function(response) {
     if(response.ok){
@@ -220,7 +219,7 @@ function fetchWeatherData(weatherURL)
 
 
 
-//F009 Get Hourly
+//F009 Get Hourly Data
 function getHourly(URL) {
     fetch(URL)
      .then(function (response) {
@@ -261,27 +260,20 @@ function getHourly(URL) {
     .catch(error => console.log('There was a getHourly error: ', error))
 }
 
-
-// Function transf time 24 to 12
+// F010 To Convert the time 24 to 12
 function convertHour() {
     let newHour = 0;
-    
     if (nowHour > 12 ) { newHour = ((nowHour - 12)); } else if ((newHour = 0)) { newHour = 12; } else{ newHour = nowHour; }
-
     console.log("checkpoint newHour -->",newHour);
-
     return newHour;
   }
-  
 
 
-
-//F008 Change the Background Image
+//F011 Change the Background Image
 function changeSummaryImage(currCond) {
     
     // Get the container
     let curCondContainer = document.getElementById("information");
-    
     console.log("Checkpoint curCondContainer --> ",curCondContainer);   //checkpoint
 
     // Deal with capitalization
@@ -324,8 +316,7 @@ function changeSummaryImage(currCond) {
 }
 
 
-//F010  Build the Weather page
-//*******************************
+//F012  Build the Weather page
 function buildPage() {
     
         // Set the title with the location name at the first
@@ -449,59 +440,3 @@ function buildPage() {
         statusContainer.setAttribute('class', 'hide'); // hides the status container
 
 }
-
-
-
-
-
- 
-
-
-
-
-
-
-    //You could add an additional function between the data gather step and the changeSummaryImage() function call to test if your keyword is included or if a variation of words that mean the same thing exists. For example:
-    
-    /*
-    let currCondition = document.sessionStorage.getItem("shortForecast");
-    let currCondition = weatherKey(currCondition);
-
-    function weatherKey(weatherSummary) {
-    
-    if (weatherSummary.includes("cloud") || weatherSummary.includes("overcast")) {
-    return "Cloud";
-    }
-    if (weatherSummary.includes("rain") || weatherSummary.includes("shower") || weatherSummary.includes("thunder")) {
-    return "Rain";
-    }
-    if (weatherSummary.includes("fog") || weatherSummary.includes("mist")) {
-    return "Fog";
-    }
-    if (weatherSummary.includes("snow") || weatherSummary.includes("flurr") || weatherSummary.includes("sleet")) {
-    return "Snow";
-    } else {
-    return "Clear";
-    }
-    }
-
-
-
-
-unction changeSummaryImage(currCond)
-{
-	//get the html elements
-	const backgroundImage = document.getElementById("information");
-
-	//set the class attribute for the backgropund image
-	backgroundImage.setAttribute("class", currCond);
-
-    //send info to console
-    console.log("condition = " + currCond);
-    console.groupEnd();
-
-    //checkPoint
-    console.log(" CheckPoint - changeSummaryImage ... is running ok ");
-}
-
-*/
