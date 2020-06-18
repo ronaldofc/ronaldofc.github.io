@@ -1,0 +1,33 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2 
+kind: Deployment 
+metadata: 
+  name: weather-web-site-deployment 
+spec: 
+  selector: 
+    matchLabels: 
+      app: weather-web-site
+  replicas: 3  # tells deployment to run "x" pods matching the template 
+  template:
+    metadata: 
+      labels: 
+        app: weather-web-site 
+    spec: 
+      containers: 
+      - name: weather-web-site
+        image: ronaldofc/weather-web-site:#{Build.BuildId}#
+        ports: 
+        - containerPort: 80 
+--- 
+# https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
+kind: Service 
+apiVersion: v1 
+metadata: 
+  name: ronaldofc-service 
+spec: 
+  selector: 
+    app: weather-web-site
+  ports: 
+  - protocol: TCP 
+    port: 80 
+    targetPort: 80 
+  type: LoadBalancer 
